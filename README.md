@@ -24,4 +24,15 @@ The primary documentation for localization is available at  https://docs.tryton.
 
 We track latest Tryton version (include all Tryton's modules and sao). Whenever a new release available, we make some adjustment into Zimera ERP. 
 
+## Configuration
+
+Configuration reside in [deploy](deploy/) file. 
+
+## Run Zimera ERP
+
+```
+$ python bin/trytond -c config_file
+```
+
+
 
