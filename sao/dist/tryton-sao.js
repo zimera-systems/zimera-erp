@@ -3991,9 +3991,12 @@ var Sao = {
         };
 
         var evaluator;
-        if (field.description.type == 'reference') {
+        var type_ = field.description.type;
+        if (type_ == 'reference') {
             var allowed_models = field.get_models(record);
             evaluator = _model_evaluator(allowed_models);
+        } else if (type_ == 'multiselection') {
+            return;
         } else {
             evaluator = _value_evaluator;
         }
@@ -16607,15 +16610,26 @@ function eval_pyson(value){
         },
         get modified() {
             if (this.record && this.field) {
-                return this.field.get_client(this.record) != this.get_value();
+                var value = this._normalize_newline(
+                    this.field.get_client(this.record));
+                return value != this.get_value();
             }
             return false;
         },
         get_value: function() {
-            return this.input.val() || '';
+            return this._normalize_newline(this.input.val() || '');
         },
         set_value: function() {
-            this.field.set_client(this.record, this.get_value());
+            // avoid modification of not normalized value
+            var value = this.get_value();
+            var prev_value = this.field.get_client(this.record);
+            if (value == this._normalize_newline(prev_value)) {
+                value = prev_value;
+            }
+            this.field.set_client(this.record, value);
+        },
+        _normalize_newline: function(content) {
+            return content.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
         },
         set_readonly: function(readonly) {
             Sao.View.Form.Text._super.set_readonly.call(this, readonly);
@@ -25912,8 +25926,8 @@ function eval_pyson(value){
                             'model.' + this.screen.model_name +
                             '.export_data_domain'),
                         'params': [
-                            domain, fields, header, offset, limit,
-                            this.screen.order, this.context],
+                            domain, fields, offset, limit, this.screen.order,
+                            header, this.context],
                     }, this.session);
                 }
                 prm.then(data => {
@@ -25925,7 +25939,7 @@ function eval_pyson(value){
                 this.destroy();
             }
         },
-        export_csv: function(fields, data, paths) {
+        export_csv: function(data, paths) {
             var locale_format = this.el_csv_locale.prop('checked');
             var unparse_obj = {};
             unparse_obj.data = data.map(function(row, i) {

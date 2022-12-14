@@ -2008,8 +2008,8 @@
                             'model.' + this.screen.model_name +
                             '.export_data_domain'),
                         'params': [
-                            domain, fields, header, offset, limit,
-                            this.screen.order, this.context],
+                            domain, fields, offset, limit, this.screen.order,
+                            header, this.context],
                     }, this.session);
                 }
                 prm.then(data => {
@@ -2021,7 +2021,7 @@
                 this.destroy();
             }
         },
-        export_csv: function(fields, data, paths) {
+        export_csv: function(data, paths) {
             var locale_format = this.el_csv_locale.prop('checked');
             var unparse_obj = {};
             unparse_obj.data = data.map(function(row, i) {
