@@ -26,13 +26,15 @@ We track latest Tryton version (include all Tryton's modules and sao). Whenever 
 
 ## Configuration
 
-Configuration reside in [deploy](deploy/) file. 
+Configuration reside in file(s) inside [deploy](tryton-suite/zerp/deploy/) directory. 
 
 ## Run Zimera ERP
+
+Enter [tryton-suite](tryton-suite/) directory and use this command to exectute Tryton:
 
 ```
 $ python bin/trytond -c config_file
 ```
 
-
+See inside [deploy](tryton-suite/zerp/deploy) directory for example of deployment configuration
 
