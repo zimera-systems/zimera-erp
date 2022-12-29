@@ -21,7 +21,6 @@ $ make install
 _$HOME/env/postgresal_
 
 ```
-cat postgresql 
 set -x PATH $HOME/software/dbms/postgresql/bin $PATH
 set -x LD_LIBRARY_PATH $HOME/software/dbms/postgresql/lib 
 set -x PGDATA $HOME/software/dbms/postgresql-data
