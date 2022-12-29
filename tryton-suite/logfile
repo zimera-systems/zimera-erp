@@ -6,3 +6,7 @@
 2022-12-29 05:07:23.796 WIB [24026] LOG:  database system is ready to accept connections
 2022-12-29 05:27:00.388 WIB [25769] ERROR:  role "tryton" already exists
 2022-12-29 05:27:00.388 WIB [25769] STATEMENT:  CREATE ROLE tryton PASSWORD 'SCRAM-SHA-256$4096:3ldiaYdE2iuBnqc+/8VVyQ==$zKdvnCUlw56ZIuRe8O57eUAyDJo1dwt+jWRpqgDDdB0=:0QNpbT6RqT8YcknK5VT63gNBtCO6MOB2wncZHXSkAG0=' NOSUPERUSER CREATEDB NOCREATEROLE INHERIT LOGIN;
+2022-12-29 08:24:00.253 WIB [24026] LOG:  received smart shutdown request
+2022-12-29 08:24:00.593 WIB [24026] LOG:  background worker "logical replication launcher" (PID 24033) exited with exit code 1
+2022-12-29 08:24:00.594 WIB [24028] LOG:  shutting down
+2022-12-29 08:24:01.266 WIB [24026] LOG:  database system is shut down

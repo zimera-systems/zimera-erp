@@ -1,5 +1,7 @@
 # Zimera ERP
 
+![Zimera ERP Logo](images/zerp-logo.png)
+
 Zimera ERP is a customized instance of [Tryton](https://tryton.org) ERP software. It is not a fork of Tryton, instead it is Tryton instance which should be executed from source (no need to install Zimera ERP using **pip**). 
 
 ## Features
