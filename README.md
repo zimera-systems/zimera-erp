@@ -20,6 +20,7 @@ We track latest **Tryton** version (including all **Tryton**'s modules and **sao
 
 Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules can be downloaded from [Tryton official download](https://downloads.tryton.org/current/) - current version. As of this 6.6 release tag, it goes to [6.6 version](https://downloads-cdn.tryton.org/6.6/).
 
+
 ### List of Official Modules
 
 | **No** | **Module Name**                              | **Version** |
@@ -100,7 +101,7 @@ Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules c
 |  74.   | dashboard                                    | 6.6.0       |
 |  75.   | edocument_uncefact                           | 6.6.0       |
 |  76.   | edocument_unece                              | 6.6.0       |
-|  77.   | gis                                          | 6.6.0       |
+|  77.   | gis (**EXCLUDED**)                           | 6.6.0       |
 |  78.   | google_maps                                  | 6.6.0       |
 |  79.   | incoterm                                     | 6.6.0       |
 |  80.   | ldap_authentication                          | 6.6.0       |
@@ -226,6 +227,12 @@ Other libs from Tryton:
 |   1.   | proteus                                      | 6.6.1       |
 |   2.   | relatorio (shoud be installed using pip)     | 0.10.1      |
 |   3.   | sao (shoud be installed using `npm`)         | 6.6.1       |
+
+### Excluded Module(s)
+
+| **No** | **Module Name**                              | **Version** |
+|-------:|----------------------------------------------|-------------|
+|   1.   | gis                                          | 6.6.1       |
 
 ## Localization
 
