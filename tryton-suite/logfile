@@ -1,0 +1,8 @@
+2022-12-29 05:07:23.535 WIB [24026] LOG:  starting PostgreSQL 14.6 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-9) 12.2.0, 64-bit
+2022-12-29 05:07:23.536 WIB [24026] LOG:  listening on IPv6 address "::1", port 5432
+2022-12-29 05:07:23.536 WIB [24026] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-12-29 05:07:23.625 WIB [24026] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-12-29 05:07:23.738 WIB [24027] LOG:  database system was shut down at 2022-12-29 04:58:59 WIB
+2022-12-29 05:07:23.796 WIB [24026] LOG:  database system is ready to accept connections
+2022-12-29 05:27:00.388 WIB [25769] ERROR:  role "tryton" already exists
+2022-12-29 05:27:00.388 WIB [25769] STATEMENT:  CREATE ROLE tryton PASSWORD 'SCRAM-SHA-256$4096:3ldiaYdE2iuBnqc+/8VVyQ==$zKdvnCUlw56ZIuRe8O57eUAyDJo1dwt+jWRpqgDDdB0=:0QNpbT6RqT8YcknK5VT63gNBtCO6MOB2wncZHXSkAG0=' NOSUPERUSER CREATEDB NOCREATEROLE INHERIT LOGIN;
