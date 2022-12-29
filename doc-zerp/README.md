@@ -10,7 +10,7 @@ pip -r requirements.txt
 
 ## Database and User/Password Access
 
-After configuratiion, create database user who will owns the database and the database as well.
+After configuratiion, create database user who will owns the database and the database as well. See also [installation and configuration of PostgreSQL](postgresql/) for more information.
 
 Create user:
 
