@@ -1,8 +1,16 @@
 # Zimera ERP Documentation
 
+## Prerequisites
+
+Tryton - as well as Zimera ERP - needs some modules in Python installation. So, it is advised that [Miniconda](https://conda.io/miniconda.html) is used for environment and package management, do install Miniconda using the instruction from Miniconda website. Make sure that all of packages requirements are satisfied. From vanilla Miniconda installation, go to [Zimera ERP](../tryton-suite/) directory and install them using **pip**:
+
+```
+pip -r requirements.txt
+```
+
 ## Configuration
 
-Configuration reside in file(s) inside [deploy](../tryton-suite/deploy/) directory. 
+Configuration reside in file(s) inside [deploy](../tryton-suite/deploy/) directory.
 
 ## Run Zimera ERP
 
