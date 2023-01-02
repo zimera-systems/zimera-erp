@@ -5,3 +5,7 @@
 2022-12-30 23:41:12.748 WIB [13133] LOG:  database system was shut down at 2022-12-29 08:24:01 WIB
 2022-12-30 23:41:13.094 WIB [13132] LOG:  database system is ready to accept connections
 2022-12-30 23:41:21.334 WIB [13161] FATAL:  database "bpdp" does not exist
+2022-12-31 00:06:17.293 WIB [13132] LOG:  received smart shutdown request
+2022-12-31 00:06:17.579 WIB [13132] LOG:  background worker "logical replication launcher" (PID 13139) exited with exit code 1
+2022-12-31 00:06:17.579 WIB [13134] LOG:  shutting down
+2022-12-31 00:06:17.827 WIB [13132] LOG:  database system is shut down
