@@ -4,6 +4,20 @@
 
 Zimera ERP is a customized instance of [Tryton](https://tryton.org) ERP software. It is not a fork of Tryton, instead it is Tryton instance which should be executed from source (no need to install Zimera ERP using **pip**). 
 
+## Get Zimera ERP
+
+Zimera ERP follows Tryton release in a specific branch. The curent version for Tryton would be the default branch (see [Zimera ERP branches](https://github.com/zimera-systems/zimera-erp/branches)). Therefore, you may use Zimera ERP for specific Tryton version using this Git command:
+
+```
+$ git clone --branch <tryton-version> https://github.com/zimera-systems/zimera-erp
+```
+
+For example, if you want to use version 6.6, then use this command:
+
+```
+$ git clone --branch 6.6 https://github.com/zimera-systems/zimera-erp
+```
+
 ## Features
 
 Zimera ERP is not a fork of Tryton, therefore it is very much the same with Tryton. See Tryton website for more information about Tryton features.
