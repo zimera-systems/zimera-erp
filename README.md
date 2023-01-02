@@ -16,7 +16,7 @@ Other thing is, localization can be problematic if we want to use language file 
 
 ## Tryton and Modules
 
-All of **Tryton** modules are in inside `trytond/modules`. As of this tag release, we use **Tryton** 6.6. Version **6.6** for Tryton now is **6.6.1** (see **trytond** package). Some modules still in version 6.6.0 but that's fine as long as they are still at **6.6.x**.
+All of **Tryton** modules are in inside `trytond/modules`. As of this tag release, we use **Tryton** 6.6. Version **6.6** for Tryton now is **6.6.1** (see [trytond package](https://pypi.org/project/trytond/)). Some modules still in version 6.6.0 but that's fine as long as they are still at **6.6.x**.
 
 We track latest **Tryton** version (including all **Tryton**'s modules and **sao**). Whenever a new release available, we make some adjustment into Zimera ERP. 
 
