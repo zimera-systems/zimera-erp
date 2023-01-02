@@ -131,7 +131,7 @@ Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules c
 | 102.   | production_split                             | 6.6.0       |
 | 103.   | production_work                              | 6.6.0       |
 | 104.   | production_work_timesheet                    | 6.6.0       |
-| 105.   | product_kit                                  | 6.6.1       |
+| 105.   | product_kit                                  | 6.6.2       |
 | 106.   | product_measurements                         | 6.6.0       |
 | 107.   | product_price_list                           | 6.6.0       |
 | 108.   | product_price_list_dates                     | 6.6.0       |
