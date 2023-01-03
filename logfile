@@ -9,3 +9,9 @@
 2022-12-31 00:06:17.579 WIB [13132] LOG:  background worker "logical replication launcher" (PID 13139) exited with exit code 1
 2022-12-31 00:06:17.579 WIB [13134] LOG:  shutting down
 2022-12-31 00:06:17.827 WIB [13132] LOG:  database system is shut down
+2023-01-03 10:46:36.153 WIB [13352] LOG:  starting PostgreSQL 14.6 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-9) 12.2.0, 64-bit
+2023-01-03 10:46:36.176 WIB [13352] LOG:  listening on IPv6 address "::1", port 5432
+2023-01-03 10:46:36.176 WIB [13352] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-01-03 10:46:36.280 WIB [13352] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-01-03 10:46:36.561 WIB [13353] LOG:  database system was shut down at 2022-12-31 00:06:17 WIB
+2023-01-03 10:46:36.874 WIB [13352] LOG:  database system is ready to accept connections

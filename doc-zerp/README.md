@@ -62,3 +62,6 @@ See inside [deploy](../tryton-suite/deploy) directory for example of deployment 
 
 If you want to use Proteus, see [Zimera ERP - Proteus Documentation](proteus/).
 
+## User Guide
+
+For more information on how you can use Zimera ERP, see [User Guide](user-guide/)
