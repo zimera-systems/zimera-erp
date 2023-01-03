@@ -52,7 +52,7 @@ Click ``OK``
 
 The left menu will shows many modules which we have already been activated. Click ``OK``.
 
-![Module configuration finished](images/module-conf-finished).
+![Module configuration finished](images/module-conf-finished.png).
 
 ## Configure Company
 
@@ -91,11 +91,11 @@ Click ``OK``. Choose template:
 
 Click ``CREATE``. A dialog will be displayed to choose where we should assign some accounts:
 
-[Create minimal COA - assign 1](images/create-minimal-coa-2.png).
+[!Create minimal COA - assign 1](images/create-minimal-coa-2.png).
 
 Choose ``main expense`` fo default expense account.
 
-[Create minimal COA - assign 2](images/create-minimal-coa-3.png).
+![Create minimal COA - assign 2](images/create-minimal-coa-3.png).
 
 Click ``CREATE``.
 
