@@ -83,6 +83,7 @@ Click ``ADD``. **Module Configuration** will shows a 80% progress. Click ``NEXT`
 ## Create ``Chart of Accounts``
 
 > Create Chart of Accounts from Template
+>
 > You can now create a chart of account for your company by selecting a chart of account template.
 
 Click ``OK``. Choose template:
