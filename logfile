@@ -37,3 +37,5 @@
 2023-01-04 21:50:40.331 WIB [8820] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2023-01-04 21:50:40.967 WIB [8821] LOG:  database system was shut down at 2023-01-04 11:50:38 WIB
 2023-01-04 21:50:41.337 WIB [8820] LOG:  database system is ready to accept connections
+2023-01-04 22:00:11.811 WIB [9392] ERROR:  unrecognized configuration parameter "databases"
+2023-01-04 22:00:11.811 WIB [9392] STATEMENT:  show databases;
