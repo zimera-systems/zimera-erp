@@ -56,11 +56,11 @@ The left menu will shows many modules which we have already been activated. Clic
 
 ## Parties Configuration
 
-Configure ``Parties`` before creating a company. A company (which is a *party* will be used as current default company) can not be deleted (it can only be deactivated), so we need to configure a company to use our own identification code. In this case, we will use **Indonesia VAT namber** (NPWM in Indonesia) as our code, then we need to configure every newly created company so that we can fill our own code. It is ok if we just want to use *sequence* (means 1 as the first company, 2 as the second company or person, etc), but once we use *sequence*, we will use it again later. Using our own code is more descriptive, so we change configuration first:
+Configure ``Parties`` before creating a company. A company (which is a *party* will be used as current default company) can not be deleted (it can only be deactivated), so we need to configure a company to use our own identification code. In this case, we will use **Indonesia VAT namber** (NPWP in Indonesia) as our code, then we need to configure every newly created company so that we can fill our own code. It is ok if we just want to use *sequence* (means 1 as the first company, 2 as the second company or person, etc), but once we use *sequence*, we will use it again later. Using our own code is more descriptive, so we change configuration first:
 
 ![Parties configuration](images/parties-configuration.png)
 
-Change into this and the *Save*:
+Change into this and then *Save*:
 
 ![Parties configuration - finish](images/parties-configuration-finish.png)
 
