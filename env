@@ -5,8 +5,6 @@ set -x PGDATA $HOME/software/dbms/postgresql-data
 alias startpsql="pg_ctl -l logfile start"
 alias stoppsql="pg_ctl stop" 
 
-set -x PATH $HOME/software/ide/neovim-release/bin $PATH
-
 set -x PATH /home/bpdp/software/python-dev-tools/miniconda39/bin $PATH
 source /home/bpdp/software/python-dev-tools/miniconda39/etc/fish/conf.d/conda.fish
 
