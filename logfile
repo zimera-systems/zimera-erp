@@ -15,3 +15,19 @@
 2023-01-03 10:46:36.280 WIB [13352] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2023-01-03 10:46:36.561 WIB [13353] LOG:  database system was shut down at 2022-12-31 00:06:17 WIB
 2023-01-03 10:46:36.874 WIB [13352] LOG:  database system is ready to accept connections
+2023-01-03 13:58:24.389 WIB [13352] LOG:  received smart shutdown request
+2023-01-03 13:58:24.688 WIB [13352] LOG:  background worker "logical replication launcher" (PID 13359) exited with exit code 1
+2023-01-03 13:58:24.689 WIB [13354] LOG:  shutting down
+2023-01-03 13:58:25.188 WIB [13352] LOG:  database system is shut down
+2023-01-03 22:00:25.190 WIB [9343] LOG:  starting PostgreSQL 14.6 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-9) 12.2.0, 64-bit
+2023-01-03 22:00:25.232 WIB [9343] LOG:  listening on IPv6 address "::1", port 5432
+2023-01-03 22:00:25.232 WIB [9343] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-01-03 22:00:25.564 WIB [9343] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-01-03 22:00:34.712 WIB [9379] LOG:  database system was shut down at 2023-01-03 13:58:25 WIB
+2023-01-03 22:00:37.953 WIB [9343] LOG:  database system is ready to accept connections
+2023-01-03 22:09:45.776 WIB [11276] ERROR:  could not serialize access due to concurrent update
+2023-01-03 22:09:45.776 WIB [11276] STATEMENT:  UPDATE "ir_session" AS "a" SET "write_uid" = 0, "write_date" = CURRENT_TIMESTAMP WHERE (("a"."id" IN (4)))
+2023-01-03 22:15:36.481 WIB [9343] LOG:  received smart shutdown request
+2023-01-03 22:15:36.667 WIB [9343] LOG:  background worker "logical replication launcher" (PID 9385) exited with exit code 1
+2023-01-03 22:15:36.668 WIB [9380] LOG:  shutting down
+2023-01-03 22:15:37.228 WIB [9343] LOG:  database system is shut down

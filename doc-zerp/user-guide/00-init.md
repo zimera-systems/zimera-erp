@@ -1,4 +1,4 @@
-# Zimea ERP - User Guide - Initialization
+# Zimera ERP - User Guide - Initialization
 
 The first time ZERP runs, the database has been created but the contents are empty. Using this initialization part, we can populate the basic settings ready for operational. Run ZERP using this command:
 
@@ -54,6 +54,18 @@ The left menu will shows many modules which we have already been activated. Clic
 
 ![Module configuration finished](images/module-conf-finished.png).
 
+## Parties Configuration
+
+Configure ``Parties`` before creating a company. A company (which is a *party* will be used as current default company) can not be deleted (it can only be deactivated), so we need to configure a company to use our own identification code. In this case, we will use **Indonesia VAT namber** (NPWM in Indonesia) as our code, then we need to configure every newly created company so that we can fill our own code. It is ok if we just want to use *sequence* (means 1 as the first company, 2 as the second company or person, etc), but once we use *sequence*, we will use it again later. Using our own code is more descriptive, so we change configuration first:
+
+![Parties configuration](images/parties-configuration.png)
+
+Change into this and the *Save*:
+
+![Parties configuration - finish](images/parties-configuration-finish.png)
+
+Let's configure company, then.
+
 ## Configure Company
 
 > You can now add your company into the system.
@@ -64,7 +76,7 @@ In the meantime, just fill the minimum part: company name, currency, and timezon
 
 ![Search a record](images/search-a-record.png)
 
-Click ``NEW`` to create a new party - company. Fill the data. You may use **Search for a record** icon to create - for example - country:
+Click ``NEW`` to create a new party - company. Fill the data. For code, just use something that have just specified before at ``Parties - Configuration``, in this case: Indonesia VAT Number or NPWP. You may use **Search for a record** icon to create - for example - country:
 
 ![Create country](images/country-code-id.png)
 
