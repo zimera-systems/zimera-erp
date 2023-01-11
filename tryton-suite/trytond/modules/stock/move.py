@@ -312,7 +312,7 @@ class Move(Workflow, ModelSQL, ModelView):
         cls._deny_modify_assigned = set(['product', 'uom', 'quantity',
             'from_location', 'to_location', 'company'])
         cls._deny_modify_done_cancel = (cls._deny_modify_assigned
-            | set(['planned_date', 'effective_date', 'state']))
+            | set(['planned_date', 'effective_date']))
         cls._allow_modify_closed_period = {
             'cost_price', 'unit_price', 'unit_price_updated', 'currency'}
 
@@ -1569,7 +1569,7 @@ class Move(Workflow, ModelSQL, ModelView):
             key = list(line[1:-1])
             if 'date' in grouping:
                 i = grouping.index('date')
-                if not isinstance(key[i], datetime.date):
+                if key[i] and not isinstance(key[i], datetime.date):
                     key[i] = datetime.date.fromisoformat(key[i])
             key = tuple(key)
             quantity = line[-1]

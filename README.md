@@ -30,7 +30,7 @@ Other thing is, localization can be problematic if we want to use language file 
 
 ## Tryton and Modules
 
-All of **Tryton** modules are in inside `trytond/modules`. As of this tag release, we use **Tryton** 6.6. Version **6.6** for Tryton now is **6.6.1** (see [trytond package](https://pypi.org/project/trytond/)). Some modules still in version 6.6.0 but that's fine as long as they are still at **6.6.x**.
+All of **Tryton** modules are in inside `trytond/modules`. As of this tag release, we use **Tryton** 6.6. Version **6.6** for Tryton now is **6.6.2** (see [trytond package](https://pypi.org/project/trytond/)). Some modules still in version 6.6.0 or 6.6.1 but that's fine as long as they are still at **6.6.x**.
 
 We track latest **Tryton** version (including all **Tryton**'s modules and **sao**). Whenever a new release available, we make some adjustment into Zimera ERP. 
 
@@ -66,7 +66,7 @@ Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules c
 |  23.   | account_invoice_line_standalone              | 6.6.0       |
 |  24.   | account_invoice_secondary_unit               | 6.6.0       |
 |  25.   | account_invoice_stock                        | 6.6.0       |
-|  26.   | account_invoice_watermark                    | 6.6.0       |
+|  26.   | account_invoice_watermark                    | 6.6.1       |
 |  27.   | account_move_line_grouping                   | 6.6.0       |
 |  28.   | account_payment                              | 6.6.0       |
 |  29.   | account_payment_braintree                    | 6.6.0       |
@@ -110,7 +110,7 @@ Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules c
 |  67.   | company                                      | 6.6.0       |
 |  68.   | company_work_time                            | 6.6.0       |
 |  69.   | country                                      | 6.6.0       |
-|  70.   | currency                                     | 6.6.0       |
+|  70.   | currency                                     | 6.6.1       |
 |  71.   | currency_ro                                  | 6.6.0       |
 |  72.   | currency_rs                                  | 6.6.0       |
 |  73.   | customs                                      | 6.6.0       |
@@ -143,7 +143,7 @@ Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules c
 | 100.   | production_outsourcing                       | 6.6.0       |
 | 101.   | production_routing                           | 6.6.0       |
 | 102.   | production_split                             | 6.6.0       |
-| 103.   | production_work                              | 6.6.0       |
+| 103.   | production_work                              | 6.6.1       |
 | 104.   | production_work_timesheet                    | 6.6.0       |
 | 105.   | product_kit                                  | 6.6.2       |
 | 106.   | product_measurements                         | 6.6.0       |
@@ -192,13 +192,13 @@ Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules c
 | 149.   | sale_shipment_cost                           | 6.6.0       |
 | 150.   | sale_shipment_grouping                       | 6.6.0       |
 | 151.   | sale_shipment_tolerance                      | 6.6.0       |
-| 152.   | sale_stock_quantity                          | 6.6.0       |
+| 152.   | sale_stock_quantity                          | 6.6.1       |
 | 153.   | sale_subscription                            | 6.6.0       |
 | 154.   | sale_subscription_asset                      | 6.6.0       |
 | 155.   | sale_supply                                  | 6.6.0       |
-| 156.   | sale_supply_drop_shipment                    | 6.6.0       |
+| 156.   | sale_supply_drop_shipment                    | 6.6.1       |
 | 157.   | sale_supply_production                       | 6.6.0       |
-| 158.   | stock                                        | 6.6.1       |
+| 158.   | stock                                        | 6.6.2       |
 | 159.   | stock_assign_manual                          | 6.6.0       |
 | 160.   | stock_consignment                            | 6.6.0       |
 | 161.   | stock_forecast                               | 6.6.0       |
@@ -210,8 +210,8 @@ Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules c
 | 167.   | stock_lot_unit                               | 6.6.0       |
 | 168.   | stock_package                                | 6.6.0       |
 | 169.   | stock_package_shipping                       | 6.6.0       |
-| 170.   | stock_package_shipping_dpd                   | 6.6.0       |
-| 171.   | stock_package_shipping_mygls                 | 6.6.0       |
+| 170.   | stock_package_shipping_dpd                   | 6.6.1       |
+| 171.   | stock_package_shipping_mygls                 | 6.6.1       |
 | 172.   | stock_package_shipping_sendcloud             | 6.6.0       |
 | 173.   | stock_package_shipping_ups                   | 6.6.0       |
 | 174.   | stock_product_location                       | 6.6.0       |

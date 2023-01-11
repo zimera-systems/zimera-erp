@@ -6,8 +6,12 @@ from io import BytesIO
 from itertools import zip_longest
 
 from lxml import etree
-from PyPDF2 import PdfFileReader, PdfFileWriter
 from zeep.exceptions import Fault
+
+try:
+    from PyPDF2 import PdfReader, PdfWriter
+except ImportError:
+    from PyPDF2 import PdfFileReader as PdfReader, PdfFileWriter as PdfWriter
 
 from trytond.i18n import gettext
 from trytond.model import fields
@@ -22,6 +26,14 @@ from .configuration import SHIPMENT_SERVICE, get_client
 from .exceptions import DPDError
 
 TRACKING_URL = 'https://tracking.dpd.de/status/%(code)s/parcel/%(reference)s'
+
+
+def iter_pdf_pages(document):
+    if hasattr(document, 'pages'):
+        yield from document.pages
+    else:
+        for i in range(document.getNumPages()):
+            yield document.getPage(i)
 
 
 class Package(metaclass=PoolMeta):
@@ -170,11 +182,14 @@ class CreateDPDShipping(Wizard):
 
         labels = []
         labels_pdf = BytesIO(shipment_response.parcellabelsPDF)
-        reader = PdfFileReader(labels_pdf)
-        for page_num in range(reader.getNumPages()):
-            new_pdf = PdfFileWriter()
+        reader = PdfReader(labels_pdf)
+        for page in iter_pdf_pages(reader):
+            new_pdf = PdfWriter()
             new_label = BytesIO()
-            new_pdf.addPage(reader.getPage(page_num))
+            if hasattr(new_pdf, 'add_page'):
+                new_pdf.add_page(page)
+            else:
+                new_pdf.addPage(page)
             new_pdf.write(new_label)
             labels.append(new_label)
 

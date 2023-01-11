@@ -39,3 +39,7 @@
 2023-01-04 21:50:41.337 WIB [8820] LOG:  database system is ready to accept connections
 2023-01-04 22:00:11.811 WIB [9392] ERROR:  unrecognized configuration parameter "databases"
 2023-01-04 22:00:11.811 WIB [9392] STATEMENT:  show databases;
+2023-01-04 23:11:59.654 WIB [8820] LOG:  received smart shutdown request
+2023-01-04 23:11:59.979 WIB [8820] LOG:  background worker "logical replication launcher" (PID 8827) exited with exit code 1
+2023-01-04 23:11:59.979 WIB [8822] LOG:  shutting down
+2023-01-04 23:12:00.251 WIB [8820] LOG:  database system is shut down

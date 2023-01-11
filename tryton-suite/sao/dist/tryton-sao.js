@@ -1,7 +1,7 @@
 /* This file is part of Tryton.  The COPYRIGHT file at the top level of
    this repository contains the full copyright notices and license terms. */
 var Sao = {
-    __version__: '6.6.0',
+    __version__: '6.6.2',
 };
 
 (function() {
@@ -5835,7 +5835,7 @@ var Sao = {
                 }
                 if ((name.split('.').length - 1) == count &&
                         (domain[1] == '=')) {
-                    return [true, domain[1], value];
+                    return [true, name, value];
                 }
             }
             return [false, null, null];
@@ -9551,7 +9551,15 @@ var Sao = {
                 group.load(value, modified || default_);
             } else {
                 for (const vals of value) {
-                    var new_record = group.new_(false);
+                    var new_record;
+                    if ('id' in vals) {
+                        new_record = group.get(vals.id);
+                        if (!new_record) {
+                            new_record = group.new_(false, vals.id);
+                        }
+                    } else {
+                        new_record = group.new_(false);
+                    }
                     if (default_) {
                         // Don't validate as parent will validate
                         new_record.set_default(vals, false, false);
@@ -12721,8 +12729,7 @@ var Sao = {
             this.domain = attributes.domain || [];
             this.context_domain = attributes.context_domain;
             this.size_limit = null;
-            if ((this.attributes.limit === undefined) ||
-                (this.attributes.limit === null)) {
+            if (this.attributes.limit === undefined) {
                 this.limit = Sao.config.limit;
             } else {
                 this.limit = attributes.limit;
@@ -19903,7 +19910,8 @@ function eval_pyson(value){
                 sum_row.append(jQuery('<th/>'));
                 this.tfoot = jQuery('<tfoot/>');
                 this.tfoot.append(sum_row);
-                this.table.append(this.tfoot);
+                // insert before thead to not hide drop-down from thead
+                this.table.prepend(this.tfoot);
             }
 
             if (this.children_field) {

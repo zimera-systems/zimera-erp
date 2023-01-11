@@ -3,7 +3,10 @@
 from io import BytesIO
 from itertools import zip_longest
 
-from PyPDF2 import PdfFileReader, PdfFileWriter
+try:
+    from PyPDF2 import PdfReader, PdfWriter
+except ImportError:
+    from PyPDF2 import PdfFileReader as PdfReader, PdfFileWriter as PdfWriter
 
 from trytond.i18n import gettext
 from trytond.model import fields
@@ -16,6 +19,14 @@ from trytond.wizard import StateAction, StateTransition, Wizard
 
 from .api import get_client, get_request
 from .exceptions import MyGLSError
+
+
+def iter_pdf_pages(document):
+    if hasattr(document, 'pages'):
+        yield from document.pages
+    else:
+        for i in range(document.getNumPages()):
+            yield document.getPage(i)
 
 
 class Package(metaclass=PoolMeta):
@@ -168,11 +179,14 @@ class ShipmentCreateShippingMyGLS(Wizard):
                     message=message))
 
         labels = []
-        reader = PdfFileReader(BytesIO(response.Labels))
-        for i in range(reader.getNumPages()):
-            pdf = PdfFileWriter()
+        reader = PdfReader(BytesIO(response.Labels))
+        for i, page in enumerate(iter_pdf_pages(reader)):
+            pdf = PdfWriter()
             label = BytesIO()
-            pdf.addPage(reader.getPage(i))
+            if hasattr(pdf, 'add_page'):
+                pdf.add_page(page)
+            else:
+                pdf.addPage(page)
             pdf.write(label)
             if carrier.mygls_type_of_printer in {'A4_2x2', 'A4_4x1'}:
                 if carrier.mygls_type_of_printer == 'A4_2x2':

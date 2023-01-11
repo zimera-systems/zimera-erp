@@ -43,6 +43,10 @@ $
 
 **Note**: default username and password for Zimera ERP: **admin:admin**
 
+## Configure **sao** Web Client
+
+See [this guide](client-sao/) to instalal Node.js modules and Bower components.
+
 ## Configuration
 
 Configuration reside in file(s) inside [deploy](../tryton-suite/deploy/) directory. Set database using the information above.
