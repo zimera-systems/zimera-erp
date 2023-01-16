@@ -1,7 +1,7 @@
 /* This file is part of Tryton.  The COPYRIGHT file at the top level of
    this repository contains the full copyright notices and license terms. */
 var Sao = {
-    __version__: '6.6.2',
+    __version__: '6.6.3',
 };
 
 (function() {
@@ -13672,7 +13672,8 @@ var Sao = {
             for (var name in fields) {
                 var props = fields[name];
                 if ((props.type != 'selection') &&
-                        (props.type != 'reference')) {
+                    (props.type != 'multiselection') &&
+                    (props.type != 'reference')) {
                     continue;
                 }
                 if (props.selection instanceof Array) {

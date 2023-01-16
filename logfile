@@ -49,3 +49,7 @@
 2023-01-11 22:39:05.595 WIB [15589] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2023-01-11 22:39:06.309 WIB [15590] LOG:  database system was shut down at 2023-01-04 23:12:00 WIB
 2023-01-11 22:39:06.634 WIB [15589] LOG:  database system is ready to accept connections
+2023-01-12 00:01:56.064 WIB [15589] LOG:  received smart shutdown request
+2023-01-12 00:01:56.430 WIB [15589] LOG:  background worker "logical replication launcher" (PID 15596) exited with exit code 1
+2023-01-12 00:01:56.430 WIB [15591] LOG:  shutting down
+2023-01-12 00:01:56.697 WIB [15589] LOG:  database system is shut down

@@ -30,7 +30,7 @@ Other thing is, localization can be problematic if we want to use language file 
 
 ## Tryton and Modules
 
-All of **Tryton** modules are in inside `trytond/modules`. As of this tag release, we use **Tryton** 6.6. Version **6.6** for Tryton now is **6.6.2** (see [trytond package](https://pypi.org/project/trytond/)). Some modules still in version 6.6.0 or 6.6.1 but that's fine as long as they are still at **6.6.x**.
+All of **Tryton** modules are in inside `trytond/modules`. As of this tag release, we use **Tryton** 6.6. Version **6.6** for Tryton now is **6.6.3** (see [trytond package](https://pypi.org/project/trytond/)). Some modules still in version 6.6.0 or 6.6.1 or 6.6.2 but that's fine as long as they are still at **6.6.x**.
 
 We track latest **Tryton** version (including all **Tryton**'s modules and **sao**). Whenever a new release available, we make some adjustment into Zimera ERP. 
 
@@ -38,6 +38,8 @@ Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules c
 
 
 ### List of Official Modules
+
+**Last update: Januari 15, 2023**
 
 | **No** | **Module Name**                              | **Version** |
 |-------:|----------------------------------------------|-------------|
@@ -145,7 +147,7 @@ Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules c
 | 102.   | production_split                             | 6.6.0       |
 | 103.   | production_work                              | 6.6.1       |
 | 104.   | production_work_timesheet                    | 6.6.0       |
-| 105.   | product_kit                                  | 6.6.2       |
+| 105.   | product_kit                                  | 6.6.3       |
 | 106.   | product_measurements                         | 6.6.0       |
 | 107.   | product_price_list                           | 6.6.0       |
 | 108.   | product_price_list_dates                     | 6.6.0       |
@@ -154,13 +156,13 @@ Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules c
 | 111.   | project_invoice                              | 6.6.0       |
 | 112.   | project_plan                                 | 6.6.0       |
 | 113.   | project_revenue                              | 6.6.0       |
-| 114.   | purchase                                     | 6.6.0       |
+| 114.   | purchase                                     | 6.6.1       |
 | 115.   | purchase_amendment                           | 6.6.0       |
 | 116.   | purchase_blanket_agreement                   | 6.6.0       |
 | 117.   | purchase_history                             | 6.6.0       |
 | 118.   | purchase_invoice_line_standalone             | 6.6.0       |
 | 119.   | purchase_price_list                          | 6.6.0       |
-| 120.   | purchase_request                             | 6.6.0       |
+| 120.   | purchase_request                             | 6.6.1       |
 | 121.   | purchase_request_quotation                   | 6.6.1       |
 | 122.   | purchase_requisition                         | 6.6.0       |
 | 123.   | purchase_secondary_unit                      | 6.6.0       |
@@ -195,7 +197,7 @@ Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules c
 | 152.   | sale_stock_quantity                          | 6.6.1       |
 | 153.   | sale_subscription                            | 6.6.0       |
 | 154.   | sale_subscription_asset                      | 6.6.0       |
-| 155.   | sale_supply                                  | 6.6.0       |
+| 155.   | sale_supply                                  | 6.6.1       |
 | 156.   | sale_supply_drop_shipment                    | 6.6.1       |
 | 157.   | sale_supply_production                       | 6.6.0       |
 | 158.   | stock                                        | 6.6.2       |
@@ -242,7 +244,7 @@ Other libs from Tryton:
 |-------:|----------------------------------------------|-------------|
 |   1.   | proteus                                      | 6.6.1       |
 |   2.   | relatorio (shoud be installed using pip)     | 0.10.1      |
-|   3.   | sao (shoud be installed using `npm`)         | 6.6.1       |
+|   3.   | sao (shoud be installed using `npm`)         | 6.6.3       |
 
 ### Excluded Module(s)
 
