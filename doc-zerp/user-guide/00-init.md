@@ -68,7 +68,7 @@ If the `Save` process succeed, than it will shows a splash dialog `Record saved.
 
 ![Record saved.](images/record-saved.png)
 
-Close `Parteis/Configuration` dialog using `X`:
+Close `Parties/Configuration` dialog using `X`:
 
 ![Close Configuration](images/close-configuration-dialog.png)
 
