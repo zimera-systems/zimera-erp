@@ -32,7 +32,15 @@ Next, populate tables into the vanilla database which has just been created abov
 $ python bin/trytond-admin -c deploy/example.cfg -d trytondb --all
 ```
 
-Create user name and password for super user administration:
+Usually, at the end of vanilla database creation process, Tryton will asks for email and admin password:
+
+```
+"admin" email for "trytondb": bambangpdp@gmail.com
+"admin" password for "trytondb": 
+"admin" password confirmation: 
+```
+
+Just in case, the questions are not asked, we have to manually create them using the command to create password for super user administration:
 
 ```
 $ python bin/trytond-admin -c deploy/example.cfg -d trytondb -p
