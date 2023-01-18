@@ -64,7 +64,15 @@ Change into this and then *Save*:
 
 ![Parties configuration - finish](images/parties-configuration-finish.png)
 
-Let's configure company, then.
+If the `Save` process succeed, than it will shows a splash dialog `Record saved.`. 
+
+![Record saved.](images/record-saved.png)
+
+Close `Parteis/Configuration` dialog using `X`:
+
+![Close Configuration](images/close-configuration-dialog.png)
+
+The screen will return to `Configure Company` dialog. Let's configure company, then.
 
 ## Configure Company
 
@@ -80,7 +88,7 @@ Click ``NEW`` to create a new party - company. Fill the data. For code, just use
 
 ![Create country](images/country-code-id.png)
 
-Hae a look at [ISO 3166 Country Code](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).
+Have a look at [ISO 3166 Country Code](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).
 
 For currency, you may also see [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) for official code. Here's another list of [country currency codes](https://www.iban.com/currency-codes).
 
