@@ -39,7 +39,7 @@ Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules c
 
 ### List of Official Modules
 
-**Last update: Januari 15, 2023**
+**Last update: January 15, 2023**
 
 | **No** | **Module Name**                              | **Version** |
 |-------:|----------------------------------------------|-------------|

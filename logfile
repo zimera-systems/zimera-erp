@@ -59,3 +59,42 @@
 2023-01-19 05:08:34.905 WIB [5459] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2023-01-19 05:08:35.552 WIB [5460] LOG:  database system was shut down at 2023-01-12 00:01:56 WIB
 2023-01-19 05:08:35.820 WIB [5459] LOG:  database system is ready to accept connections
+2023-01-19 07:41:49.990 WIB [23803] ERROR:  could not serialize access due to concurrent update
+2023-01-19 07:41:49.990 WIB [23803] STATEMENT:  UPDATE "ir_session" AS "a" SET "write_uid" = 0, "write_date" = CURRENT_TIMESTAMP WHERE (("a"."id" IN (3)))
+2023-01-19 07:46:57.966 WIB [24802] ERROR:  could not serialize access due to concurrent update
+2023-01-19 07:46:57.966 WIB [24802] STATEMENT:  UPDATE "ir_session" AS "a" SET "write_uid" = 0, "write_date" = CURRENT_TIMESTAMP WHERE (("a"."id" IN (5)))
+2023-01-19 08:01:32.970 WIB [26455] ERROR:  could not serialize access due to concurrent update
+2023-01-19 08:01:32.970 WIB [26455] STATEMENT:  UPDATE "ir_session" AS "a" SET "write_uid" = 0, "write_date" = CURRENT_TIMESTAMP WHERE (("a"."id" IN (8)))
+2023-01-19 08:02:02.960 WIB [26637] ERROR:  could not serialize access due to concurrent update
+2023-01-19 08:02:02.960 WIB [26637] STATEMENT:  UPDATE "ir_session" AS "a" SET "write_uid" = 0, "write_date" = CURRENT_TIMESTAMP WHERE (("a"."id" IN (8)))
+2023-01-19 08:27:52.466 WIB [5459] LOG:  received smart shutdown request
+2023-01-19 08:27:52.706 WIB [5459] LOG:  background worker "logical replication launcher" (PID 5466) exited with exit code 1
+2023-01-19 08:27:52.707 WIB [5461] LOG:  shutting down
+2023-01-19 08:27:53.116 WIB [5459] LOG:  database system is shut down
+2023-01-19 11:30:44.601 WIB [6671] LOG:  starting PostgreSQL 14.6 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-9) 12.2.0, 64-bit
+2023-01-19 11:30:44.619 WIB [6671] LOG:  listening on IPv6 address "::1", port 5432
+2023-01-19 11:30:44.619 WIB [6671] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-01-19 11:30:44.732 WIB [6671] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-01-19 11:30:45.245 WIB [6673] LOG:  database system was shut down at 2023-01-19 08:27:53 WIB
+2023-01-19 11:30:45.635 WIB [6671] LOG:  database system is ready to accept connections
+2023-01-19 12:41:04.695 WIB [6671] LOG:  received smart shutdown request
+2023-01-19 12:41:04.911 WIB [6671] LOG:  background worker "logical replication launcher" (PID 6679) exited with exit code 1
+2023-01-19 12:41:04.911 WIB [6674] LOG:  shutting down
+2023-01-19 12:41:05.092 WIB [6671] LOG:  database system is shut down
+2023-01-21 11:14:40.763 WIB [7288] LOG:  starting PostgreSQL 14.6 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-9) 12.2.0, 64-bit
+2023-01-21 11:14:40.779 WIB [7288] LOG:  listening on IPv6 address "::1", port 5432
+2023-01-21 11:14:40.779 WIB [7288] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-01-21 11:14:40.877 WIB [7288] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-01-21 11:14:41.357 WIB [7289] LOG:  database system was shut down at 2023-01-19 12:41:05 WIB
+2023-01-21 11:14:41.760 WIB [7288] LOG:  database system is ready to accept connections
+2023-01-21 12:26:54.237 WIB [13786] ERROR:  could not serialize access due to concurrent update
+2023-01-21 12:26:54.237 WIB [13786] STATEMENT:  UPDATE "ir_session" AS "a" SET "write_uid" = 0, "write_date" = CURRENT_TIMESTAMP WHERE (("a"."id" IN (11)))
+2023-01-21 12:30:12.793 WIB [13907] ERROR:  could not serialize access due to concurrent update
+2023-01-21 12:30:12.793 WIB [13907] STATEMENT:  UPDATE "ir_session" AS "a" SET "write_uid" = 0, "write_date" = CURRENT_TIMESTAMP WHERE (("a"."id" IN (11)))
+2023-01-21 12:57:28.299 WIB [17225] ERROR:  could not serialize access due to concurrent update
+2023-01-21 12:57:28.299 WIB [17225] STATEMENT:  UPDATE "ir_session" AS "a" SET "write_uid" = 0, "write_date" = CURRENT_TIMESTAMP WHERE (("a"."id" IN (17)))
+2023-01-21 13:11:22.211 WIB [7288] LOG:  received fast shutdown request
+2023-01-21 13:11:22.288 WIB [7288] LOG:  aborting any active transactions
+2023-01-21 13:11:22.290 WIB [7288] LOG:  background worker "logical replication launcher" (PID 7295) exited with exit code 1
+2023-01-21 13:11:22.291 WIB [7290] LOG:  shutting down
+2023-01-21 13:11:22.511 WIB [7288] LOG:  database system is shut down
