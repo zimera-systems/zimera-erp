@@ -2,7 +2,11 @@
 
 ![Zimera ERP Logo](images/zerp-logo.jpg)
 
-Zimera ERP is a customized instance of [Tryton](https://tryton.org) ERP software. It is not a fork of Tryton, instead it is Tryton instance which should be executed from source (no need to install Zimera ERP using **pip**). 
+Zimera ERP is a customized instance of [Tryton](https://tryton.org) ERP software. It is not a fork of Tryton, instead it is Tryton instance which should be executed from source (no need to install Zimera ERP using **pip**). Here is the [trademark notification from Tryton Foundation](https://www.tryton.org/foundation):
+
+**TRADEMARK**
+
+*Tryton® is a registered trademark of the Tryton Fondation Privée. Any third-party using the term "Tryton" must do so only to refer to the Tryton project, and not to refer to any other project or activity, unless the reference is unrelated to the Nice Classifications (9, 37, and 42) covered in the registration*.
 
 ## Get Zimera ERP
 
@@ -39,7 +43,7 @@ Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules c
 
 ### List of Official Modules
 
-**Last update: January 15, 2023**
+**Last update: February 5th, 2023**
 
 | **No** | **Module Name**                              | **Version** |
 |-------:|----------------------------------------------|-------------|
@@ -254,9 +258,36 @@ Other libs from Tryton:
 
 ## Localization
 
-The primary documentation for localization is available at  https://docs.tryton.org/projects/server/en/latest/topics/translation.html. If you want to create / edit .po file, just create / edit and then copy that file (.po) into `trytond/modules/modulename/locale`.
+The primary documentation for localization is available at https://docs.tryton.org/projects/server/en/latest/topics/translation.html. If you want to create / edit .po file, just create / edit and then copy that file (.po) into `trytond/modules/modulename/locale`.
 
 ## Documentation
 
 For documentation - specific to Zimera ERP, have a look at [Zimera ERP documentation](doc-zerp). Eventhough you come from pure Tryton background, some documentation for Zimera ERP might be enlightening.
 
+## License
+
+This software has the same license with Tryton. Here is the [COPYRIGHT file](https://hg.tryton.org/tryton/file/tip/COPYRIGHT).
+
+```
+Copyright (C) 2004-2008 Tiny SPRL.
+Copyright (C) 2007-2023 Cédric Krier.
+Copyright (C) 2007-2013 Bertrand Chenal.
+Copyright (C) 2008-2023 B2CK SPRL.
+Copyright (C) 2011 Openlabs Technologies & Consulting (P) Ltd.
+Copyright (C) 2011-2022 Nicolas Évrard.
+Copyright (C) 2020-2021 Maxime Richez
+Copyright (C) 2020-2021 SALUC SA
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+```
