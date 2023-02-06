@@ -34,7 +34,7 @@ Other thing is, localization can be problematic if we want to use language file 
 
 ## Tryton and Modules
 
-All of **Tryton** modules are in inside `trytond/modules`. As of this tag release, we use **Tryton** 6.6. Version **6.6** for Tryton now is **6.6.3** (see [trytond package](https://pypi.org/project/trytond/)). Some modules still in version 6.6.0 or 6.6.1 or 6.6.2 but that's fine as long as they are still at **6.6.x**.
+All of **Tryton** modules are in inside `trytond/modules`. As of this tag release, we use **Tryton** 6.6. Version **6.6** for Tryton now is **6.6.4** (see [trytond package](https://pypi.org/project/trytond/)). Some modules still in version 6.6.0 or 6.6.1 or 6.6.2 or 6.6.3 but that's fine as long as they are still at **6.6.x**.
 
 We track latest **Tryton** version (including all **Tryton**'s modules and **sao**). Whenever a new release available, we make some adjustment into Zimera ERP. 
 
@@ -43,12 +43,12 @@ Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules c
 
 ### List of Official Modules
 
-**Last update: February 5th, 2023**
+**Last update: February 6th, 2023**
 
 | **No** | **Module Name**                              | **Version** |
 |-------:|----------------------------------------------|-------------|
-|   1.   | account                                      | 6.6.0       |
-|   2.   | account_asset                                | 6.6.0       |
+|   1.   | account                                      | 6.6.1       |
+|   2.   | account_asset                                | 6.6.1       |
 |   3.   | account_be                                   | 6.6.0       |
 |   4.   | account_budget                               | 6.6.0       |
 |   5.   | account_cash_rounding                        | 6.6.0       |
@@ -65,10 +65,10 @@ Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules c
 |  16.   | account_eu                                   | 6.6.0       |
 |  17.   | account_fr                                   | 6.6.0       |
 |  18.   | account_fr_chorus                            | 6.6.0       |
-|  19.   | account_invoice                              | 6.6.1       |
+|  19.   | account_invoice                              | 6.6.2       |
 |  20.   | account_invoice_correction                   | 6.6.0       |
 |  21.   | account_invoice_defer                        | 6.6.0       |
-|  22.   | account_invoice_history                      | 6.6.0       |
+|  22.   | account_invoice_history                      | 6.6.1       |
 |  23.   | account_invoice_line_standalone              | 6.6.0       |
 |  24.   | account_invoice_secondary_unit               | 6.6.0       |
 |  25.   | account_invoice_stock                        | 6.6.0       |
@@ -115,7 +115,7 @@ Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules c
 |  66.   | commission_waiting                           | 6.6.0       |
 |  67.   | company                                      | 6.6.0       |
 |  68.   | company_work_time                            | 6.6.0       |
-|  69.   | country                                      | 6.6.0       |
+|  69.   | country                                      | 6.6.1       |
 |  70.   | currency                                     | 6.6.1       |
 |  71.   | currency_ro                                  | 6.6.0       |
 |  72.   | currency_rs                                  | 6.6.0       |
@@ -166,8 +166,8 @@ Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules c
 | 117.   | purchase_history                             | 6.6.0       |
 | 118.   | purchase_invoice_line_standalone             | 6.6.0       |
 | 119.   | purchase_price_list                          | 6.6.0       |
-| 120.   | purchase_request                             | 6.6.1       |
-| 121.   | purchase_request_quotation                   | 6.6.1       |
+| 120.   | purchase_request                             | 6.6.2       |
+| 121.   | purchase_request_quotation                   | 6.6.2       |
 | 122.   | purchase_requisition                         | 6.6.0       |
 | 123.   | purchase_secondary_unit                      | 6.6.0       |
 | 124.   | purchase_shipment_cost                       | 6.6.0       |
@@ -195,13 +195,13 @@ Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules c
 | 146.   | sale_promotion_coupon                        | 6.6.0       |
 | 147.   | sale_promotion_coupon_payment                | 6.6.0       |
 | 148.   | sale_secondary_unit                          | 6.6.0       |
-| 149.   | sale_shipment_cost                           | 6.6.0       |
-| 150.   | sale_shipment_grouping                       | 6.6.0       |
+| 149.   | sale_shipment_cost                           | 6.6.1       |
+| 150.   | sale_shipment_grouping                       | 6.6.1       |
 | 151.   | sale_shipment_tolerance                      | 6.6.0       |
 | 152.   | sale_stock_quantity                          | 6.6.1       |
 | 153.   | sale_subscription                            | 6.6.0       |
 | 154.   | sale_subscription_asset                      | 6.6.0       |
-| 155.   | sale_supply                                  | 6.6.1       |
+| 155.   | sale_supply                                  | 6.6.2       |
 | 156.   | sale_supply_drop_shipment                    | 6.6.1       |
 | 157.   | sale_supply_production                       | 6.6.0       |
 | 158.   | stock                                        | 6.6.2       |
@@ -228,10 +228,10 @@ Zimera ERP consists of **Tryton** and all of **Tryton**'s modules. The modules c
 | 179.   | stock_shipment_cost_weight                   | 6.6.0       |
 | 180.   | stock_shipment_measurements                  | 6.6.0       |
 | 181.   | stock_split                                  | 6.6.0       |
-| 182.   | stock_supply                                 | 6.6.0       |
+| 182.   | stock_supply                                 | 6.6.1       |
 | 183.   | stock_supply_day                             | 6.6.0       |
 | 184.   | stock_supply_forecast                        | 6.6.0       |
-| 185.   | stock_supply_production                      | 6.6.0       |
+| 185.   | stock_supply_production                      | 6.6.1       |
 | 186.   | timesheet                                    | 6.6.0       |
 | 187.   | timesheet_cost                               | 6.6.0       |
 | 188.   | user_role                                    | 6.6.0       |
@@ -246,9 +246,20 @@ Other libs from Tryton:
 
 | **No** | **Library Name**                             | **Version** |
 |-------:|----------------------------------------------|-------------|
-|   1.   | proteus                                      | 6.6.1       |
+|   1.   | proteus                                      | 6.6.2       |
 |   2.   | relatorio (shoud be installed using pip)     | 0.10.1      |
-|   3.   | sao (shoud be installed using `npm`)         | 6.6.3       |
+|   3.   | sao (shoud be installed using `npm`)         | 6.6.4       |
+|   4.   | tryton (desktop - GUI client)                | 6.6.4       |
+
+Prior to run Tryton Desktop, you have to install its dependencies:
+
+```
+    install_requires=[
+        'pycairo',
+        "python-dateutil",
+        'PyGObject>=3.19',
+        ],
+```
 
 ### Excluded Module(s)
 

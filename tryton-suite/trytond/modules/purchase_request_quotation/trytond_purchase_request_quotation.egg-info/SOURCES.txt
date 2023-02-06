@@ -1,7 +1,3 @@
-.drone.yml
-.flake8
-.hgtags
-.isort.cfg
 CHANGELOG
 COPYRIGHT
 LICENSE
@@ -62,6 +58,7 @@ tryton.cfg
 ./view/purchase_request_quotation_line_list.xml
 ./view/purchase_request_quotation_line_list_request.xml
 ./view/purchase_request_quotation_list.xml
+doc/conf.py
 doc/index.rst
 locale/bg.po
 locale/ca.po

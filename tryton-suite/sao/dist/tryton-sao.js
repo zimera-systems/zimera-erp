@@ -1,7 +1,7 @@
 /* This file is part of Tryton.  The COPYRIGHT file at the top level of
    this repository contains the full copyright notices and license terms. */
 var Sao = {
-    __version__: '6.6.3',
+    __version__: '6.6.4',
 };
 
 (function() {
@@ -8915,13 +8915,13 @@ var Sao = {
             var previous_value = this.get(record);
             this.set(record, value);
             if (this._has_changed(previous_value, this.get(record))) {
-                this.changed(record);
-                record.validate(null, true, false, true);
                 record.set_modified(this.name);
-            } else if (force_change) {
                 this.changed(record);
                 record.validate(null, true, false, true);
+            } else if (force_change) {
                 this.set_modified();
+                this.changed(record);
+                record.validate(null, true, false, true);
             }
         },
         get_client: function(record) {
@@ -9658,13 +9658,13 @@ var Sao = {
                 previous_ids.sort(), value.sort());
             this._set_value(record, value, false, modified);
             if (modified) {
-                this.changed(record);
-                record.validate(null, true, false, true);
                 record.set_modified(this.name);
-            } else if (force_change) {
                 this.changed(record);
                 record.validate(null, true, false, true);
+            } else if (force_change) {
                 record.set_modified();
+                this.changed(record);
+                record.validate(null, true, false, true);
             }
         },
         get_client: function(record) {
@@ -11736,6 +11736,7 @@ var Sao = {
         },
         record_modified: function() {
             this.activate_save();
+            this.info_bar.refresh();
         },
         record_saved: function() {
             this.activate_save();
@@ -13207,6 +13208,9 @@ var Sao = {
             return this.__current_record;
         },
         set current_record(record) {
+            if (this.__current_record === record) {
+                return;
+            }
             this.__current_record = record;
             var pos = null;
             var record_id = null;
@@ -15637,7 +15641,9 @@ function eval_pyson(value){
             window.setTimeout(() => {
                 var value = this.get_value();
                 window.setTimeout(() => {
-                    if (this.record && (this.get_value() == value)) {
+                    if (this.record &&
+                        (this.get_value() == value) &&
+                        this.modified) {
                         this.view.screen.record_modified(false);
                     }
                 }, 300);
@@ -17574,6 +17580,7 @@ function eval_pyson(value){
                 row_activate: this.activate.bind(this),
                 exclude_field: attributes.relation_field || null,
                 limit: null,
+                context: this.view.screen.context,
                 pre_validate: attributes.pre_validate,
                 breadcrumb: breadcrumb,
             });
@@ -18147,6 +18154,7 @@ function eval_pyson(value){
                 row_activate: this.activate.bind(this),
                 readonly: true,
                 limit: null,
+                context: this.view.screen.context,
                 breadcrumb: breadcrumb,
             });
             this.screen.windows.push(this);
@@ -18311,12 +18319,16 @@ function eval_pyson(value){
                 // Remove the first tree view as mode is form only
                 view_ids.shift();
             }
-            return new Sao.Screen(this.attributes.relation, {
+            var model = this.attributes.relation;
+            var breadcrumb = jQuery.extend([], this.view.screen.breadcrumb);
+            breadcrumb.push(this.attributes.string || Sao.common.MODELNAME.get(model));
+            return new Sao.Screen(model, {
                 'domain': domain,
                 'view_ids': view_ids,
                 'mode': ['form'],
                 'views_preload': this.attributes.views,
-                'context': context
+                'context': context,
+                'breadcrumb': breadcrumb,
             });
         },
         edit: function() {
@@ -24336,6 +24348,7 @@ function eval_pyson(value){
         },
         record_modified: function() {
             this.activate_save();
+            this.info_bar.refresh();
         },
         activate_save: function() {
             if (this.but_ok.hasClass('disabled') && this.screen.modified()) {
@@ -26518,8 +26531,9 @@ function eval_pyson(value){
             this.states[definition.state] = button;
             return button;
         },
-        record_message: function() {
+        record_modified: function() {
             this.update_buttons();
+            this.info_bar.refresh();
         },
         update_buttons: function() {
             var record = this.screen.current_record;
